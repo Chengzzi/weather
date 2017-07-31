@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气预报</title>
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_dtoi60dja6ob6gvi.css">
+	<link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="node_modules/store/dist/store.everything.min.js"></script>
+	
+</head>
+<body>
+	<div class="weather">
+		<img class="bg" src="img/bg1.jpg">
+		<div class="main">
+			<div class="main-top clear">
+				<div class="city-name"><span class="iconfont">&#xe81c;</span>北京市</div>
+
+
+				<div class="toggle-city">
+					<p class="add-btn">添加城市</p>
+					<p class="toggle-btn">切换城市</p>
+				</div>
+				<div class="inform-nav">
+					<span class="active"><i class="iconfont">&#xe661;</i>Weather</span>
+					<span><i class="iconfont">&#xe6e7;</i>Suggestion</span>
+				</div>
+			</div>
+			<div class="main-bottom">
+				<ul class="information">
+					<li>
+						<p>周一 07月24日 (实时：31℃)</p>
+						<p>35 ~ 25℃</p>
+						<p>晴</p>
+						<p>风向：南风微风</p>
+					</li>
+					<li>
+						<p>周二</p>
+						<p>35 ~ 25℃</p>
+						<p>晴</p>
+						<p>风向：东南风微风</p>
+					</li>
+					<li>
+						<p>周三</p>
+						<p>35 ~ 25℃</p>
+						<p>晴</p>
+						<p>风向：南风微风</p>
+					</li>
+					<li>
+						<p>周四</p>
+						<p>35 ~ 25℃</p>
+						<p>晴</p>
+						<p>风向：南风微风</p>
+					</li>
+				</ul>
+				<ul class="Suggestion">
+					<li>
+						<p>紫外线强度指数</p>
+						<p>很强</p>
+						<p>紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。</p>
+					</li>
+					<li>
+						<p>紫外线强度指数</p>
+						<p>很强</p>
+						<p>紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。</p>
+					</li>
+					<li>
+						<p>紫外线强度指数</p>
+						<p>很强</p>
+						<p>紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。</p>
+					</li>
+					<li>
+						<p>紫外线强度指数</p>
+						<p>很强</p>
+						<p>紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。</p>
+					</li>
+					<li>
+						<p>紫外线强度指数</p>
+						<p>很强</p>
+						<p>紫外线辐射极强，建议涂擦SPF20以上、PA++的防晒护肤品，尽量避免暴露于日光下。</p>
+					</li>
+				</ul>
+			</div>
+			<div class="model-box"></div>
+			<div class="add-model">
+				<i class="iconfont close">&#xe6ca;</i>
+				城市:<input id="add-input" type="text" placeholder="需要添加的城市" maxlength="8" name="">
+				<p class="if-error"></p>
+				<input disabled class="submit" type="button" value="确定" name="">
+
+
+			</div>
+			<div class="toggle-model">
+				<i class="iconfont close">&#xe6ca;</i>
+				城市:<select class="chose">
+				</select>
+				<br>
+				<input class="submit" type="button" value="确定" name="">
+				<input class="delete" type="button" value="移除" name="">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
